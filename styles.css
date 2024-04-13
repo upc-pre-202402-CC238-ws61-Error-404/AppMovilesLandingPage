@@ -150,30 +150,22 @@ nav img {
 }
 
 .image-item {
-    margin: 0 30px;
+    margin: 30px 30px;
     text-align: center;
     background-color: #337D50;
-    flex-grow: 1;
-}
-
-.image-grid .image-item{
-    width: 250px;
-    margin:20px;
     border-radius: 20px;
-    padding: 20px 10px;
 }
 
 .image-item img {
-    width: 30%; /* Asegura que las imágenes no se estiren más allá de su tamaño original */
-    height: auto;
+    width: 350px;
+    height: 300px;
 }
 
-
-.image-description {
-    font-size: 18px;
-    font-weight: 600;
-    color:white;
-    margin-top: 10px;
+.image-item p {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-style: bold;
+    color: #ffffff;
 }
 
 
