@@ -1,41 +1,39 @@
-body, ul {
+body {
     margin: 0;
-    padding: 0;
-}
-
-
-
-ul{
-    margin-left: 80px;
 }
 
 nav {
     background-color: #005F40;
-    color: white;
-    list-style: none;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    display: flex; 
-    align-items: center; 
+    overflow: hidden;
 }
 
-nav li {
-    display: inline-block;
-    margin-right: 20px;
-
-}
 nav a {
-    text-decoration: none;
+    
+    float: left;
+    display: block;
     color: white;
-    font-size: 24px;
+    font-size: 16px;
     font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal; 
-    padding: 4px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 15px;
+    text-decoration: none;
 }
 
 nav img {
-    float: left;
+    max-height: 80px;
+}
+
+nav .left {
+    display: flex;
+    align-items: center;
+}
+.nav .right {
+    display: flex;
+    align-items: center;
 }
 
 #home {
