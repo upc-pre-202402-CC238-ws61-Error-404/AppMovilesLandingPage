@@ -37,7 +37,7 @@ nav .left {
 }
 
 #home {
-    position: relative; /* Set the parent container to relative position */
+    position: relative; 
     min-height: 90vh;
     background-image: url("images/backgroundHome.jpg");
     background-repeat: no-repeat;
@@ -105,7 +105,7 @@ nav .left {
 }
 
 /*aAbout the product*/
-#aboutProduct {
+#about-product {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -116,14 +116,14 @@ nav .left {
     margin-bottom: 60px;
 }
 
-#aboutProduct h2 {
+#about-product h2 {
     font-size: 36px;
     color: #000000;
     font-weight: 500;
     margin-bottom: 25px;
 }
 
-#aboutProduct .largeText {
+#about-product .largeText {
     color: #000000;
     font-size: 24px;
     font-weight: 400;
@@ -131,7 +131,7 @@ nav .left {
     padding: 0px 20px;
 }
 
-#aboutProduct h3 {
+#about-product h3 {
     color: #000000;
     font-size: 24px;
     font-weight: 500;
@@ -350,25 +350,25 @@ flex-wrap: wrap;
 
 /*Contact us section*/
 
-#contactUs {
+#contact-us {
     background: linear-gradient(to bottom, white 20%, #005F40 20%, #005F40 80%, white 80%);
     padding-top: 100px;
     padding-bottom: 100px;
     position: relative;
-    display: flex; /* Utiliza flexbox para alinear elementos verticalmente */
-    justify-content: center; /* Centra horizontalmente los elementos */
-    align-items: center; /* Centra verticalmente los elementos */
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 
 }
 
 
-#contactUs h2{
+#contact-us h2{
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-size: 36px;
     font-weight: 500;
 }
-#contactUs p{
+#contact-us p{
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-size: 18px;
@@ -389,7 +389,7 @@ flex-wrap: wrap;
     color: white;
     padding: 20px;
     position: relative;
-    right: 10%; /* Agregar un margen izquierdo para separar el elemento */
+    right: 10%; 
 }
 
 .form {
@@ -401,7 +401,7 @@ flex-wrap: wrap;
     display: flex; 
     position: relative;
     flex-direction: column;
-    left: 10%; /* Desplazar el formulario 20px a la derecha */
+    left: 10%; 
 }
 
 .form h2{
@@ -450,7 +450,7 @@ input, textarea {
 
 
 /*About us section*/
-#aboutUs {
+#about-us {
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -462,21 +462,21 @@ input, textarea {
 }
 
 
-#aboutUs h2{
+#about-us h2{
     font-size: 36px;
     color: #000000;
     font-weight: 500;
     margin-bottom: 25px;
 }
 
-#aboutUs h3{
+#about-us h3{
     color:#FFFFFF;
     font-size: 24px;
     font-weight: 500;
     margin-top: 0px;
 }
 
-#aboutUs p{
+#about-us p{
     color:#FFFFFF;
     font-size: 16px;
     font-weight: 400;
@@ -485,7 +485,7 @@ input, textarea {
 
 
 
-#aboutUs  .our_team{
+#about-us  .our_team{
 display: flex;
 width: auto;
 justify-content: center;
@@ -529,7 +529,7 @@ footer {
     padding: 30px;
 }
 
- .socialIcons {
+ .social-icons {
     margin-left: auto; 
     font-size: 32px;
     padding: 10px;
