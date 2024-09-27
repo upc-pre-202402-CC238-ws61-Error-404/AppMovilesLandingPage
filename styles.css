@@ -22,6 +22,14 @@ nav a {
     padding: 0px 15px;
     text-decoration: none;
 }
+.playstore-image {
+    text-align: center;
+    margin-top: 200px;  
+}
+
+.playstore-image img {
+    width: 40%;
+}
 
 nav img {
     max-height: 80px;
