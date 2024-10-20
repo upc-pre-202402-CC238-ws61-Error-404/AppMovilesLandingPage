@@ -17,18 +17,29 @@
             <a href="#home" class="logo">
                 <img src="images/ChaquitacllaLogo.jpeg" alt="Logo">
             </a>
+            <div class="nav-links">
             <a href="#about-product">Acerca del Producto</a>
             <a href="#subscriptions">Subscripciones</a>
             <a href="#reviews">Reseñas</a>
             <a href="#contact-us">Contáctanos</a>
             <a href="#about-us">Acerce de Nosotros</a>
+            </div>
         </div>
 
         <div class="right">
             <a href="index.html">Inglés</a>
-        </div>
-    
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>    
     </nav>
+    <div id="dropdown-menu" class="dropdown-menu">
+        <a href="#about-product">Acerca del Producto</a>
+        <a href="#subscriptions">Subscripciones</a>
+        <a href="#reviews">Reseñas</a>
+        <a href="#contact-us">Contáctanos</a>
+        <a href="#about-us">Acerce de Nosotros</a>
+    </div>
 
     <section id="home">
         <div class="overlay"></div> 
@@ -39,7 +50,7 @@
                 <img src="images/playstore.png" alt="Descargar en Play Store">
             </div>     
         </div>
-    </section>
+    </section>  
 
     <section id="about-product">
         <h2>Descubre más de nuestra plataforma</h2>
@@ -124,16 +135,6 @@
 
     <section id="contact-us">
         <div class="contact-container">
-            <div class="info">
-                <h2>Contact us</h2>
-                <p><a class="social-icons" href="https://www.facebook.com"><i class="fa fa-facebook-f"></i></a>
-                    <a class="social-icons" href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
-                    <a class="social-icons" href="https://www.youtube.com"><i class="fa fa-youtube"></i></a></p>
-                <p>Av. de la Marina 2890, San Miguel 15087</p>
-                <p>choclauclo@gmail.com</p>
-                <p>999 999 999</p>
-            </div>
-        
             <div class="form">
                 <h2>Como podemos ayudarte?</h2>
                 <form action="/submit_form" method="post">
@@ -141,6 +142,13 @@
                     <input type="email" name="email" placeholder="Correo" required>
                     <textarea name="description" placeholder="Descripción" required></textarea>
                     <button type="submit">Enviar</button>
+                    <h2>Contactanos</h2>
+                    <p><a class="social-icons" href="https://www.facebook.com"><i class="fa fa-facebook-f"></i></a>
+                        <a class="social-icons" href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                        <a class="social-icons" href="https://www.youtube.com"><i class="fa fa-youtube"></i></a></p>
+                    <p>Av. de la Marina 2890, San Miguel 15087</p>
+                    <p>choclauclo@gmail.com</p>
+                    <p>999 999 999</p>
                 </form>
             </div>
         </div>        
@@ -190,10 +198,14 @@
         <a class="normal">Av. de la Marina 2810, San Miguel 15087</a>
         <a class="normal">chaquitaclla@gmail.com</a>
         <a class="normal">999 999 999</a>
-        <a class="social-icons" href="https://www.facebook.com"><i class="fa fa-facebook-f"></i></a>
-        <a class="social-icons" href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
-        <a class="social-icons" href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
-    </footer>   
+    
+        <div class="social-container">
+            <a class="social-icons" href="https://www.facebook.com"><i class="fa fa-facebook-f"></i></a>
+            <a class="social-icons" href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+            <a class="social-icons" href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
+        </div>
+    </footer>
+     
     
     <footer id="footerTwo">
         <a>&copy; Copyright Error 404 2024</a>
