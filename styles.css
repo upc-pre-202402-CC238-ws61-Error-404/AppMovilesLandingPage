@@ -292,11 +292,11 @@ nav .right {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    display: none;
     margin-top: 50px;
     width: 100%;
     overflow: hidden;
     position: relative;
+    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 .carousel-item {
@@ -307,6 +307,7 @@ nav .right {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 .carousel-item:hover {
@@ -330,18 +331,20 @@ nav .right {
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
         padding: 10px 20px;
+        box-sizing: border-box; /* Ensure padding is included in the width */
     }
 
     .carousel-item {
-        flex: 0 0 30%; /* Cada card ocupa un 45% del ancho */
+        flex: 0 0 35%; /* Each card takes up 45% of the width */
         scroll-snap-align: center;
-        margin: 0 10px; /* Añadir espacio entre cada card */
-        display: block; /* Mostrar las imágenes individualmente */
+        margin: 0 10px; /* Add space between each card */
+        display: block; /* Display images individually */
+        box-sizing: border-box; /* Ensure padding is included in the width */
     }
 
     .carousel-item img {
-        max-width: 90%; /* Reducir el tamaño de las imágenes en móvil */
-        margin: 0 auto; /* Centrar la imagen */
+        max-width: 90%; /* Reduce image size on mobile */
+        margin: 0 auto; /* Center the image */
     }
 }
 
@@ -353,8 +356,9 @@ nav .right {
     }
 
     .carousel-item {
-        flex: 0 0 22%; /* Cada card ocupa un 22% del ancho */
-        margin: 0 10px; /* Añadir espacio entre cada card */
+        flex: 0 0 22%; /* Each card takes up 22% of the width */
+        margin: 0 10px; /* Add space between each card */
+        box-sizing: border-box; /* Ensure padding is included in the width */
     }
 }
 /* Placeholder section for video about the product */
@@ -629,6 +633,7 @@ nav .right {
     justify-content: center; 
     align-items: center;
     width: 100%;
+    overflow: hidden; /* Asegura que no haya desbordamiento */
 }
 
 #contact-us h2 {
@@ -652,6 +657,7 @@ nav .right {
     justify-content: center;
     padding: 20px;
     width: 100%;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
 }
 
 .contact-container .form {
@@ -662,6 +668,7 @@ nav .right {
     background-color: #9A5D4E;
     padding: 20px;
     border-radius: 8px;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
 }
 
 .contact-container .form form {
@@ -677,6 +684,7 @@ nav .right {
     font-size: 16px;
     width: 100%;
     max-width: 500px;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
 }
 
 .contact-container .form button {
@@ -689,6 +697,7 @@ nav .right {
     width: 100%;
     max-width: 500px;
     border-radius: 10px;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
 }
 
 .contact-container .form button:hover {
@@ -707,13 +716,15 @@ nav .right {
         margin: 0; /* Remove margin for mobile */
         width: 100%; /* Ensure the form takes full width */
         max-width: 100%; /* Remove max-width to prevent overflow */
+        padding: 10px; /* Reduce padding for mobile */
     }
 
     .contact-container .form input,
     .contact-container .form textarea,
     .contact-container .form button {
-        width: 90%; /* Reduce input width slightly */
+        width: 100%; /* Ensure full width for inputs */
         max-width: none; /* Disable max-width for mobile */
+        padding: 10px; /* Ensure padding is consistent */
     }
 }
 
