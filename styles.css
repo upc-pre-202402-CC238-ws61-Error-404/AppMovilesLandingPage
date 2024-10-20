@@ -268,10 +268,62 @@ nav .right {
     color: #ffffff;
     margin-top: 10px;
 }
+/* About product images */
+#about-product-images {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+#about-product-images h3 {
+    font-size: 24px;
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.image-carousel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: none;
+    margin-top: 50px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item {
+    margin: 20px;
+    text-align: center;
+    background-color: #337D50;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
 
 /* Responsive styles for carousel */
 @media (max-width: 768px) {
-    .image-grid {
+    .image-carousel {
         display: flex;
         flex-direction: row;
         overflow-x: scroll;
@@ -280,27 +332,31 @@ nav .right {
         padding: 10px 20px;
     }
 
-    .image-item {
-        flex: 0 0 80%; /* Cada card ocupa un 80% del ancho */
+    .carousel-item {
+        flex: 0 0 30%; /* Cada card ocupa un 45% del ancho */
         scroll-snap-align: center;
         margin: 0 10px; /* Añadir espacio entre cada card */
         display: block; /* Mostrar las imágenes individualmente */
     }
 
-    .image-item img {
+    .carousel-item img {
         max-width: 90%; /* Reducir el tamaño de las imágenes en móvil */
         margin: 0 auto; /* Centrar la imagen */
     }
-    .image-item {
-        display: none; 
-    }
-
-    .image-item p {
-        font-size: 16px; /* Reducir el tamaño del texto en móvil */
-        padding: 10px 0;
-    }
 }
 
+@media (min-width: 769px) {
+    .image-carousel {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+
+    .carousel-item {
+        flex: 0 0 22%; /* Cada card ocupa un 22% del ancho */
+        margin: 0 10px; /* Añadir espacio entre cada card */
+    }
+}
 /* Placeholder section for video about the product */
 #about-product-video {
     margin: 0;

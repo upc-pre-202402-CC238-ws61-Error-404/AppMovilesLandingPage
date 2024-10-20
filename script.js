@@ -1,8 +1,10 @@
 let slideIndex = 1;
 showTestimonial(slideIndex);
+
 function changeTestimonial(n) {
     showTestimonial(slideIndex += n);
 }
+
 function showTestimonial(n) {
     let i;
     const slides = document.getElementsByClassName("testimonial-slide");
@@ -62,4 +64,35 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Detectar cambios en el tamaño de la ventana
     window.addEventListener('resize', startCarousel);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const imageItems = document.querySelectorAll('#about-product-images .carousel-item');
+    let currentIndex = 0;
+    let carouselInterval;
+
+    function showImages() {
+        imageItems.forEach(item => item.style.display = 'none');
+        for (let i = 0; i < 2; i++) {
+            imageItems[(currentIndex + i) % imageItems.length].style.display = 'block';
+        }
+    }
+
+    function startCarousel() {
+        showImages();
+        carouselInterval = setInterval(() => {
+            currentIndex = (currentIndex + 2) % imageItems.length;
+            showImages();
+        }, 3000);
+    }
+
+    function stopCarousel() {
+        clearInterval(carouselInterval);
+    }
+
+    startCarousel();
+
+    const imageCarousel = document.querySelector('.image-carousel');
+    imageCarousel.addEventListener('touchstart', stopCarousel);
+    imageCarousel.addEventListener('touchend', startCarousel);
 });
